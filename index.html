@@ -3,104 +3,87 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f7f7f7;
-      color: #222;
-    }
-    header {
-      background: #000;
-      color: #fff;
-      padding: 2rem;
-      text-align: center;
-    }
-    nav {
-      background: #222;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      max-width: 900px;
-      margin: 2rem auto;
-      background: #fff;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .project {
-      border-left: 4px solid #000;
-      margin-bottom: 1.5rem;
-      padding-left: 1rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      margin-top: 2rem;
-      background: #000;
-      color: #fff;
-    }
-  </style>
+  <title>Nathan Huang | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
   <h1>Nathan Huang</h1>
-  <p>Engineer • Developer • Researcher</p>
+  <p>Electrical Engineer • Software Engineer • Robotics • Microelectronics</p>
 </header>
 
 <nav>
   <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#education">Education</a>
   <a href="#projects">Projects</a>
+  <a href="#leadership">Leadership</a>
+  <a href="#skills">Skills</a>
   <a href="#contact">Contact</a>
 </nav>
 
-<section id="about">
+<div class="container" id="about">
   <h2>About Me</h2>
   <p>
-    Master's student at Purdue University studying Electrical Engineering. Research areas of Automatic Controls and Computer Networks
+    I am an Electrical and Computer Engineering student at Purdue University with concentrations in
+    microelectronics, semiconductors, robotics, automatic control, and full-stack development.
+    I work across hardware, embedded systems, software engineering, PCB design, and applied robotics.
   </p>
-</section>
+</div>
 
-<section id="projects">
+<div class="container" id="experience">
+  <h2>Experience</h2>
+  <div class="project">
+    <h3>Amazon Robotics — Hardware Development Engineer Intern</h3>
+    <p>Developed TestStand validation sequences, integrated MLP robot obstacle avoidance, built IO-Link software libraries, configured EtherCAT systems, and deployed robotic simulations using ROBOGUIDE and PolyScope.</p>
+  </div>
+  <div class="project">
+    <h3>Graduate Research Assistant — Purdue University</h3>
+    <p>Led BLE sensor system development for IMU, force, strain, and temperature logging on custom PCBs.</p>
+  </div>
+  <div class="project">
+    <h3>Landis+Gyr — General Engineering Co-Op</h3>
+    <p>Validated smart meters with 22+ high-voltage tests; engineered FPGA-Arduino-LabVIEW automated test rigs.</p>
+  </div>
+</div>
+
+<div class="container" id="education">
+  <h2>Education</h2>
+  <h3>Purdue University — M.S. Electrical Engineering</h3>
+  <p>Concentrations: Semiconductors, Microelectronics, Automatic Control</p>
+  <h3>Purdue University — B.S. Electrical Engineering</h3>
+  <p>Minor in Computer Science; Extensive coursework in digital systems, ASIC design, AI, and microprocessors.</p>
+</div>
+
+<div class="container" id="projects">
   <h2>Projects</h2>
-
   <div class="project">
-    <h3>Project Title</h3>
-    <p>
-      A short description of the project, what tools you used, and what you
-      accomplished.
-    </p>
+    <h3>Altair 8800 Reconstruction</h3>
+    <p>Built four modern Altair systems using Raspberry Pi microcontrollers and a Rust-based Intel 8080 emulator.</p>
   </div>
-
   <div class="project">
-    <h3>Another Project</h3>
-    <p>
-      Another description. This layout supports as many projects as you want.
-    </p>
+    <h3>Piano Hand — Autonomous Robotics Club</h3>
+    <p>Designed robotic piano-playing hands with TMC2209 drivers, encoders, PCBs, and automatic sheet-music parsing.</p>
   </div>
+  <div class="project">
+    <h3>RoomEase App</h3>
+    <p>Developed MERN full-stack application for roommate communication and task coordination.</p>
+  </div>
+</div>
 
-</section>
+<div class="container" id="leadership">
+  <h2>Leadership</h2>
+  <h3>Autonomous Robotics Club — Head of Electronics</h3>
+  <p>Led six sub-teams, engineered custom PCBs, and integrated servo/encoder systems for robotic piano hands.</p>
+  <h3>EPICS — Marikadjy App</h3>
+  <p>Developed language-learning tool for 1,000+ native Kayapó speakers using React, Node.js, and MongoDB.</p>
+</div>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: <strong>nathanhuang004@gmail.com</strong></p>
-  <p>LinkedIn: <a href="#">your-linkedin</a></p>
-</section>
-
-<footer>
-  <p>© 2025 Nathan Huang — All Rights Reserved</p>
-</footer>
-
-</body>
-</html>
+<div class="container" id="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>Python, C/C++, JavaScript (Node, React, Express), SQL, Go, Kotlin, Verilog</li>
+    <li>PCB design: Altium, KiCad, LTspice, OrCAD</li>
+    <li>Embedded systems, microcontrollers, BLE systems</li>
+    <li>MATLAB, Simulink, PyTor
